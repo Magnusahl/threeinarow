@@ -1,13 +1,15 @@
 package com.company;
 
-import java.sql.SQLOutput;
-
-class Main {
-public static void main(String[]args) {
-
-    //testar
 
 
-}
+public class Main {
+    public static void main(String[]args) {
+
+
+        Field field1 = new Field('3','3','3');
+        field1.printfield();
+
+
+    }
 
 }
