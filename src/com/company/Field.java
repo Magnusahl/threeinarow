@@ -6,7 +6,7 @@ public class Field {
     int rows;
     char number;
 
-    private String [][] player = new String[3][3];
+    public String [][] player = new String[3][3];
 
     public Field(int size, int rows, char number) {
         player[0][0] = "1";

@@ -23,7 +23,7 @@ public class Game {
     public void gameRun (Player name) {
         int choice = 0;
 
-        System.out.println(name.getName() + name.getSymbol() + "Välj en siffra: ");
+        System.out.println(name.getName() + name.getSymbol() + " Välj en siffra: ");
         Scanner scan = new Scanner(System.in);
         choice = scan.nextInt();
         Field field1 = new Field('3','3','1');
