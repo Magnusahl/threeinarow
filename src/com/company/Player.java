@@ -2,8 +2,8 @@ package com.company;
 
 public class Player {
 
-    String name;
-    String symbol;
+   private String name;
+    private String symbol;
 
     //Constructor for player
     public Player(String name, String symbol) {
@@ -15,15 +15,10 @@ public class Player {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getSymbol() {
         return symbol;
     }
 
-    public void setSymbol(String symbol) {
-        this.symbol = symbol;
-    }
+
 }
