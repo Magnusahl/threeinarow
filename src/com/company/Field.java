@@ -3,7 +3,7 @@ package com.company;
 public class Field {
 
     private String[] board;
-    //Count steps to determin if the game is draw
+
     private int counter = 0;
 
     public Field() {
@@ -19,7 +19,7 @@ public class Field {
         board[8] = "_";
     }
 
-    public void placeMarker(String marker, int position) {
+    public void checkSymbol(String marker, int position) {
         board [position] = marker;
         counter++;
     }
@@ -32,7 +32,7 @@ public class Field {
         System.out.print("|"); System.out.print(board[6]); System.out.print("|"); System.out.print(board[7]); System.out.print("|"); System.out.print(board[8]);
         System.out.println("|");
     }
-
+    //Kan lägga till så att om man matar in fel siffra så blir det false
     public boolean available(int posiotion) {
         if (!board[posiotion].equals("_")) {
             return false;
