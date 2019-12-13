@@ -3,6 +3,8 @@ package com.company;
 public class Field {
 
     private String[] board;
+    //Count steps to determin if the game is draw
+    private int counter = 0;
 
     public Field() {
         board = new String[9];
@@ -19,6 +21,7 @@ public class Field {
 
     public void placeMarker(String marker, int position) {
         board [position] = marker;
+        counter++;
     }
 
     public void print() {
@@ -74,9 +77,10 @@ public class Field {
                 System.out.println("Player O Wins!");
                 return true;
             }
-            /*else if () {
-                System.out.println("Det blev oavgjort!");
-            }*/
+            if (counter == 9) {
+                System.out.println("It's a Draw!");
+                return true;
+            }
         }
         return false;
     }
